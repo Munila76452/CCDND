@@ -23,8 +23,7 @@ if __name__ == "__main__":
         "soil_status": "5.5pH, red soil",
         "weather": "moderate rainfall",
     }
-    full_diagnosis_pipeline("../cotton_leaves/Aphids/1.jpg", env_data=env_data)
-    img, prompt, pred = full_diagnosis_pipeline("../cotton_leaves/Aphids/1.jpg", env_data=env_data)
+    img, prompt, pred = full_diagnosis_pipeline("../cotton_leaves/Aphids/2.jpg", env_data=env_data)
     
     cv2.imwrite("explanation.jpg", img)
     print("Generated prompt:", prompt)
